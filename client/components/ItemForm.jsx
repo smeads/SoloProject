@@ -14,14 +14,14 @@ class ItemForm extends Component {
   }
 
   handleSubmit(event) {
-    alert('A name was submitted: ' + this.state.value);
     event.preventDefault();
+    this.props.handleClick(event, this.state.value);
   }
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
-        <input type="text" value={this.state.value} onChange={this.handleChange} />
+      <form id="food-form" onSubmit={this.handleSubmit}>
+        <input id="item-input" type="text" value={this.state.value} onChange={this.handleChange} />
         <button type="submit" value="Submit">Submit</button>
       </form>
     );

@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "foodie",
+    "password": "ilovefood",
+    "database": "food-hunt",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "foodie",
+    "password": "ilovefood",
+    "database": "food-hunt",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "foodie",
+    "password": "ilovefood",
+    "database": "food-hunt",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}

@@ -22,7 +22,7 @@ class ItemForm extends Component {
     return (
       <form id="food-form" onSubmit={this.handleSubmit}>
         <input id="item-input" type="text" value={this.state.value} onChange={this.handleChange} />
-        <button type="submit" value="Submit">Submit</button>
+        <button id="submit-btn" type="submit" value="Submit">Submit</button>
       </form>
     );
   }

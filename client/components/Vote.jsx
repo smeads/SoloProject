@@ -6,12 +6,16 @@ class Vote extends Component {
   }
 
   render() {
-    const id = this.props.index;
+    const itemId = this.props.itemId;
+    const vote = this.props.vote;
+    const upVote = this.props.upVote;
+    const downVote = this.props.downVote;
+
     return (
-      <div className="vote" id={id}>
-        <div className="arrow-up" id={id} onClick={this.props.upVote}></div>
-        <p className="vote-count" id={id}>{this.props.vote}</p>
-        <div className="arrow-down" id={id} onClick={this.props.downVote}></div>
+      <div className="vote" id={itemId}>
+        <div className="arrow-up" id={itemId} onClick={upVote}></div>
+        <p className="vote-count" id={itemId}>{vote}</p>
+        <div className="arrow-down" id={itemId} onClick={downVote}></div>
       </div>
     );
   }

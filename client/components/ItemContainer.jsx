@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import UserImage from './UserImage.jsx';
 import Item from './Item.jsx';
 import Vote from './Vote.jsx';
 
@@ -12,8 +13,9 @@ class ItemContainer extends Component {
     const downVote = this.props.downVote;
     return (
       <div id="item-container">
-        <Item item={this.props.item} />
-        <Vote index={this.props.index} vote={this.props.votes} upVote={upVote} downVote={downVote} />
+        <UserImage />
+        <Item item={this.props.name} date={this.props.date} />
+        <Vote itemId={this.props.itemId} vote={this.props.votes} upVote={upVote} downVote={downVote} />
       </div>
     );
   }
